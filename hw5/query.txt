@@ -1,0 +1,10 @@
+adta -r 10000
+adtp
+adtq lqxyo
+adtq iiiii
+adtr 99
+adtp
+Adta -r 39
+adtq 003123dagerkfjldjllkldkglenrogoeirjiovdkmfoeiorjgoiej
+adtp
+q -f

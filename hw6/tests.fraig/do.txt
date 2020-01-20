@@ -1,0 +1,105 @@
+cirr opt03.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr opt04.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr sim12.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr sim14.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr sim13.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr strash08.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr sim11.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+cirr strash10.aag -replace
+cirp
+cirp -s
+cirp -pi
+cirp -po
+cirp -n
+cirp -fl
+cirg 2
+cirg 2 -fanout 3
+cirg 8
+cirg 8 -fanin 3
+cirg 7 -fanin 1
+cirw
+q -f

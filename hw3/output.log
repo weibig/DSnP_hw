@@ -1,0 +1,374 @@
+mydb> dbr tests/test1.json
+"tests/test1.json" was read in successfully.
+
+mydb> dbp
+{
+  "Ric" : 100,
+  "John" : 50
+}
+Total JSON elements: 2
+
+mydb> dbap Mary 30
+
+mydb> dbap Mary 30
+
+mydb> dbap
+
+mydb> dbap Larry
+
+mydb> dbap Larry 80 Hello
+
+mydb> dbap Larry XX
+
+mydb> dbap Larry 80
+
+mydb> dbp
+{
+  "Ric" : 100,
+  "John" : 50,
+  "Mary" : 30,
+  "Larry" : 80
+}
+Total JSON elements: 4
+
+mydb> dbp Ric
+{ "Ric" : 100 }
+
+mydb> dbp ric
+
+mydb> dbav
+The average of the DB is 65.00.
+
+mydb> dbc
+There are 4 JSON elements in DB.
+
+mydb> dbap Ben -50
+
+mydb> dbp
+{
+  "Ric" : 100,
+  "John" : 50,
+  "Mary" : 30,
+  "Larry" : 80,
+  "Ben" : -50
+}
+Total JSON elements: 5
+
+mydb> dbma
+The max JSON element is { "Ric" : 100 }.
+
+mydb> dbmi
+The min JSON element is { "Ben" : -50 }.
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Mary" : 30,
+  "John" : 50,
+  "Larry" : 80,
+  "Ric" : 100
+}
+Total JSON elements: 5
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Mary" : 30,
+  "John" : 50,
+  "Larry" : 80,
+  "Ric" : 100
+}
+Total JSON elements: 5
+
+mydb> dbsort -k
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "John" : 50,
+  "Larry" : 80,
+  "Mary" : 30,
+  "Ric" : 100
+}
+Total JSON elements: 5
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Mary" : 30,
+  "John" : 50,
+  "Larry" : 80,
+  "Ric" : 100
+}
+Total JSON elements: 5
+
+mydb> dbsort -k
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "John" : 50,
+  "Larry" : 80,
+  "Mary" : 30,
+  "Ric" : 100
+}
+Total JSON elements: 5
+
+mydb> dbsum
+The sum of the DB is 210.
+
+mydb> dbav
+The average of the DB is 42.00.
+
+mydb> dbao
+
+mydb> dbaP wendy 12
+
+mydb> dbc
+There are 6 JSON elements in DB.
+
+mydb> hel
+DBAPpend:      append an JSON element (key-value pair) to the end of DB
+DBAVerage:     compute the average of the DB
+DBCount:       report the number of JSON elements in the DB
+DBMAx:         report the maximum JSON element
+DBMIn:         report the minimum JSON element
+DBPrint:       print the JSON element(s) in the DB
+DBRead:        read data from .json file
+DBSOrt:        sort the JSON object by key or value
+DBSUm:         compute the summation of the DB
+DOfile:        execute the commands in the dofile
+HELp:          print this help message
+HIStory:       print command history
+Quit:          quit the execution
+
+
+mydb> hel dbp
+DBPrint [(string key)]
+
+mydb> his
+   0: dbr tests/test1.json
+   1: dbp
+   2: dbap Mary 30
+   3: dbap Mary 30
+   4: dbap
+   5: dbap Larry
+   6: dbap Larry 80 Hello
+   7: dbap Larry XX
+   8: dbap Larry 80
+   9: dbp
+   10: dbp Ric
+   11: dbp ric
+   12: dbav
+   13: dbc
+   14: dbap Ben -50
+   15: dbp
+   16: dbma
+   17: dbmi
+   18: dbsort -v
+   19: dbp
+   20: dbsort -v
+   21: dbp
+   22: dbsort -k
+   23: dbp
+   24: dbsort -v
+   25: dbp
+   26: dbsort -k
+   27: dbp
+   28: dbsum
+   29: dbav
+   30: dbao
+   31: dbaP wendy 12
+   32: dbc
+   33: hel
+   34: hel dbp
+   35: his
+
+mydb> dbr -replace tests/test4.json
+DB is replaced...
+"tests/test4.json" was read in successfully.
+
+mydb> dbap Larry 80 Hello
+
+mydb> dbap Larry XX
+
+mydb> dbap Larry 80
+
+mydb> dbp
+{
+  "Larry" : 80
+}
+Total JSON elements: 1
+
+mydb> dbp Ric
+
+mydb> dbp ric
+
+mydb> dbav
+The average of the DB is 80.00.
+
+mydb> dbc
+There is 1 JSON element in DB.
+
+mydb> dbap Ben -50
+
+mydb> dbp
+{
+  "Larry" : 80,
+  "Ben" : -50
+}
+Total JSON elements: 2
+
+mydb> dbma
+The max JSON element is { "Larry" : 80 }.
+
+mydb> dbmi
+The min JSON element is { "Ben" : -50 }.
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Larry" : 80
+}
+Total JSON elements: 2
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Larry" : 80
+}
+Total JSON elements: 2
+
+mydb> dbsort -k
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Larry" : 80
+}
+Total JSON elements: 2
+
+mydb> dbsort -v
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Larry" : 80
+}
+Total JSON elements: 2
+
+mydb> dbsort -k
+
+mydb> dbp
+{
+  "Ben" : -50,
+  "Larry" : 80
+}
+Total JSON elements: 2
+
+mydb> dbsum
+The sum of the DB is 30.
+
+mydb> dbav
+The average of the DB is 15.00.
+
+mydb> dbc
+There are 2 JSON elements in DB.
+
+mydb> hel
+DBAPpend:      append an JSON element (key-value pair) to the end of DB
+DBAVerage:     compute the average of the DB
+DBCount:       report the number of JSON elements in the DB
+DBMAx:         report the maximum JSON element
+DBMIn:         report the minimum JSON element
+DBPrint:       print the JSON element(s) in the DB
+DBRead:        read data from .json file
+DBSOrt:        sort the JSON object by key or value
+DBSUm:         compute the summation of the DB
+DOfile:        execute the commands in the dofile
+HELp:          print this help message
+HIStory:       print command history
+Quit:          quit the execution
+
+
+mydb> hel dbp
+DBPrint [(string key)]
+
+mydb> his
+   0: dbr tests/test1.json
+   1: dbp
+   2: dbap Mary 30
+   3: dbap Mary 30
+   4: dbap
+   5: dbap Larry
+   6: dbap Larry 80 Hello
+   7: dbap Larry XX
+   8: dbap Larry 80
+   9: dbp
+   10: dbp Ric
+   11: dbp ric
+   12: dbav
+   13: dbc
+   14: dbap Ben -50
+   15: dbp
+   16: dbma
+   17: dbmi
+   18: dbsort -v
+   19: dbp
+   20: dbsort -v
+   21: dbp
+   22: dbsort -k
+   23: dbp
+   24: dbsort -v
+   25: dbp
+   26: dbsort -k
+   27: dbp
+   28: dbsum
+   29: dbav
+   30: dbao
+   31: dbaP wendy 12
+   32: dbc
+   33: hel
+   34: hel dbp
+   35: his
+   36: dbr -replace tests/test4.json
+   37: dbap Larry 80 Hello
+   38: dbap Larry XX
+   39: dbap Larry 80
+   40: dbp
+   41: dbp Ric
+   42: dbp ric
+   43: dbav
+   44: dbc
+   45: dbap Ben -50
+   46: dbp
+   47: dbma
+   48: dbmi
+   49: dbsort -v
+   50: dbp
+   51: dbsort -v
+   52: dbp
+   53: dbsort -k
+   54: dbp
+   55: dbsort -v
+   56: dbp
+   57: dbsort -k
+   58: dbp
+   59: dbsum
+   60: dbav
+   61: dbc
+   62: hel
+   63: hel dbp
+   64: his
+
+mydb> q
